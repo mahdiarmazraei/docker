@@ -1,0 +1,11 @@
+sudo docker pull postgres
+
+sudo docker run --name some-postgres -e POSTGRES_PASSWORD=somePassword -d postgres
+
+sudo docker exec -it some-postgres sh
+
+sudo docker exec -it some-postgres sh
+
+psql
+
+CREATE DATABASE dbname;
