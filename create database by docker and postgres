@@ -9,3 +9,6 @@ su - postgres
 psql
 
 CREATE DATABASE dbname;
+//////////////////////////////////////////////////
+who to change user ?
+\c mydatabase;
