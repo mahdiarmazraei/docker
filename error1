@@ -1,0 +1,9 @@
+how to slove this error?"Error response from daemon: driver failed programming external connectivity on endpoint blog_postgres (bebd768d5026ce4e5051c039686029ed454aae9441faecca4ca7056fb7b689c7): Error starting userland proxy: listen tcp4 0.0.0.0:5432: bind: address already in use"
+
+
+Find the process that is using the port 5432:
+sudo lsof -i :5432
+
+
+Kill the process using the port 5432:
+sudo kill -9 <PID>
